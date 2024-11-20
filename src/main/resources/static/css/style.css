@@ -1,6 +1,152 @@
+/* General */
 body {
-    /*Para la barra superior fija*/
-    padding-top: 70px;
-    /*Para la barra inferior fija*/
-    padding-bottom: 70px;
+    padding-top: 56px; /* Ajusta el espacio para el navbar fijo */
+    background: url('../img/fondo.jpg') no-repeat center center fixed; /* Fondo de pantalla */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    font-family: 'Arial', sans-serif; /* Fuente más legible */
+    color: #333; /* Color del texto */
+}
+
+.navbar {
+    z-index: 1030; /* Asegura que el navbar esté sobre el contenido */
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo semi-transparente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar el navbar */
+}
+
+/* Títulos */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Texto claro para destacar en el fondo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para destacar en el fondo */
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo semi-transparente */
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+.invalid-feedback {
+    font-size: 0.9rem;
+    color: #e74c3c; /* Color de error */
+}
+
+/* Botones */
+button.btn-primary {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+button.btn-danger {
+    background-color: #dc3545; /* Rojo */
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+button.btn-warning {
+    background-color: #ffc107; /* Amarillo */
+    border-color: #ffc107;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Tablas */
+.table {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border-radius: 8px;
+    overflow: hidden; /* Para esquinas redondeadas */
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05); /* Rayado suave */
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.card h2 {
+    color: #007bff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Alertas */
+.alert {
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo semi-transparente */
+    color: #f8f9fa;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Contenedor */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
